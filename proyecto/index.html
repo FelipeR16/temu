@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temu App</title>
+
+  <!-- Estilos desde src/ -->
+  <link rel="stylesheet" href="./src/style.css" />
+
+  <!-- Ícono de la app -->
+  <link rel="icon" href="./assets/icon-only.png" type="image/png" />
+
+  <!-- Manifest para PWA (opcional) -->
+  <link rel="manifest" href="./manifest.json" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
+<body>
+
+  <!-- Barra de navegación superior (se muestra solo con sesión iniciada) -->
+  <nav id="navbar" style="display: none;">
+    <button id="btn-catalogo">Catálogo</button>
+    <button id="btn-logout">Cerrar sesión</button>
+  </nav>
+
+  <!-- Contenedor dinámico para todas las vistas -->
+  <main id="app"></main>
+
+  <!-- Script principal desde src/ -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
